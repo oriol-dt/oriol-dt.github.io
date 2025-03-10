@@ -12,7 +12,7 @@
                 font-family: 'Calibri', sans-serif;
             }
 
-            .language-title {
+            #language-title {
                 font-size: 18pt;
             }
 
@@ -26,6 +26,7 @@
     <body>
         <div class="container">
             <h1 class="display-4">Mi Currículum</h1>
+            <h4>Técnico de Sistemas / Programador Full-Stack</h4>
             <div id="personal-info">
                 <div class="row">
                     <div class="col-md-4">
@@ -37,11 +38,33 @@
                         <p><strong>Nombre</strong>: Oriol Dueñas Triguero</p>
                         <p><strong>Edad</strong>: <span id="edad"></span></p>
                         <p><strong>Información de contacto</strong>: <a href="mailto:orioldu@hotmail.com?subject=Oferta%20Trabajo%20Oriol%20Dueñas%20Triguero" target="_blank"><span class="btn btn-primary">Correo electrónico</span></a></p>
+                        <p><strong>Ubicación</strong>: España</p>
+                        <hr>
+                        <h4>Habilidades y fortalezas</h4>
+                        <ul>
+                            <li>Facilidad para aprender</li>
+                            <li>Proactividad</li>
+                            <li>Autonomía</li>
+                        </ul><hr>
+                        <h4>Redes sociales</h4>
+                        <ul>
+                            <li><a href="https://github.com/oriol-dt" target="_blank">GitHub</a></li>
+                            <li><a href="https:/www.linkedin.com/in/oriol-dt" target="_blank">LinkedIn</a></li>
+                        </ul>
+                        <hr>
+                        <details>
+                            <summary id="language-title">Idiomas</summary>
+                            <ul class="language-list">
+                                <li>Español - Nativo</li>
+                                <li>Catalán - Nativo</li>
+                                <li>Inglés - <a style="text-decoration: none; :hover {text-decoration: underline;}" href="https://drive.google.com/file/d/1DExCsPQn_VeXbxMIYusob0DuujgJeOgK/view?usp=sharing" target="_blank">Intermedio</a></li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
             </div>
             <a class="btn btn-primary" href="experience.html"><strong>Experiencia laboral</strong></a>
-            <a class="btn btn-primary" href="education.html"><strong>>Formación</strong></a>
+            <a class="btn btn-primary" href="education.html"><strong>Formación</strong></a>
             <p><strong>Última actualización</strong>: <span id="day"></span> de <span id="month"></span> del <span id="year"></span>.</p>
 
             <script src="resources/js/main-script.js"></script>
