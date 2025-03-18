@@ -7,7 +7,7 @@ const year = actualDate.getFullYear();
 
 document.getElementById("day").innerHTML = ` ${day} `;
 document.getElementById("month").innerHTML = ` ${month} `;
-document.getElementById("year").innerHTML = ` ${year} `;
+document.getElementById("year").innerHTML = ` ${year}`;
 
 let age = actualDate.getFullYear() - birthDate.getFullYear();
 
