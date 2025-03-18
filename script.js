@@ -1,5 +1,5 @@
-const fechaActual = new Date();
-const añoActual = fechaActual.getFullYear();
+const actualDate = new Date();
+const actualYear = actualDate.getFullYear();
 
-const spanAño = document.getElementById('year');
-spanAño.textContent = añoActual;
+const spanYear = document.getElementById('year');
+spanYear.textContent = actualYear;
