@@ -1,0 +1,27 @@
+body {
+    background-color: darkslategray;
+    color: white;
+    font-family: 'Calibri', sans-serif;
+}
+
+#language-title {
+    font-size: 18pt;
+}
+
+.language-list li {
+    font-size: 15pt;
+}
+
+footer {
+    margin-left: 50px;
+}
+
+#profile-pic {
+    padding-top: 30px;
+    padding-right: 80px;
+}
+
+.button:active {
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
