@@ -1,19 +1,25 @@
-const birthDate = new Date(2002, 2, 25);
-const actualDate = new Date();
+function calculateAge(birthDate) {
+    const now = new Date();
+    const birthday = new Date(birthDate);
+    let age = now.getFullYear() - birthday.getFullYear();
+    const month = now.getMonth() - birthday.getMonth();
 
-const day = actualDate.getDate();
-const month = actualDate.toLocaleDateString('es-ES', { month: 'long' });
-const year = actualDate.getFullYear();
-
-document.getElementById("day").innerHTML = ` ${day} `;
-document.getElementById("month").innerHTML = ` ${month} `;
-document.getElementById("year").innerHTML = ` ${year}`;
-
-let age = actualDate.getFullYear() - birthDate.getFullYear();
-
-if (actualDate.getMonth() < birthDate.getMonth() || actualDate.getMonth() === birthDate.getMonth() && actualDate.getDate() < birthDate.getDate()) {
-    age--;
+    if (month < 0 || (month === 0 && now.getDate() < birthday.getDate())) {
+        age--;
+    }
+    return age;
 }
 
-const ageSpan = document.getElementById("age");
-ageSpan.innerHTML = `${age} años`;
+const birthDate = '2002-03-25';
+const age = calculateAge(birthDate);
+
+const ageSpan = document.getElementById('age');
+ageSpan.innerText = `${age} años`;
+
+const day = new Date().getDate();
+const month = new Date().toLocaleDateString('es-ES', { month: 'long' });
+const year = new Date().getFullYear();
+
+document.getElementById('day').innerHTML = ` ${day} `;
+document.getElementById('month').innerHTML = ` ${month} `;
+document.getElementById('year').innerHTML = ` ${year}`;
