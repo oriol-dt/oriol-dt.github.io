@@ -10,7 +10,7 @@ function calculateAge(birthDate) {
     return age;
 }
 
-const birthDate = '2002-03-25';
+const birthDate = '2002-03-24';
 const age = calculateAge(birthDate);
 
 const ageSpan = document.getElementById('age');
