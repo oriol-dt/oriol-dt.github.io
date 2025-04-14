@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Plantilla Sistema Cornell</title>
+        <link rel="stylesheet" href="cornell_style.css">
+        <script src="cornell_script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-section">
+                    <label for="subject">Asignatura:</label>
+                    <input type="text" id="subject" placeholder="Nombre de la asignatura">
+                </div>
+                <div class="header-section">
+                    <label for="topic">Tema:</label>
+                    <input type="text" id="topic" placeholder="Tema de la clase">
+                </div>
+                <div class="header-section">
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date" readonly>
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="notes-column">
+                    <label for="notes">Notas</label>
+                    <textarea id="notes" placeholder="Notas principales del tema"></textarea>
+                </div>
+                <div class="cues-column">
+                    <label for="cues">Ideas clave / Preguntas</label>
+                    <textarea id="cues" placeholder="Revisa las notas y escribe aquí ideas clave, preguntas o palabras clave."></textarea>
+                </div>
+            </div>
+            <footer>
+                <label for="summary">Resumen</label>
+                <textarea id="summary" placeholder="Escribe un resumen de las ideas."></textarea>
+            </footer>
+        </div>
+    </body>
+</html>

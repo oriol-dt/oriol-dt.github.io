@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-section label {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.header-section input[type="text"],
+.header-section input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.notes-column,
+.cues-column {
+    flex: 1;
+    padding: 15px;
+}
+
+.notes-column {
+    border-right: 1px solid #ccc;
+}
+
+.notes-column h2,
+.cues-column h2,
+footer h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.notes-column label,
+.cues-column label,
+footer label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: calc(100% - 16px);
+    height: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-section {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .notes-column {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+}
