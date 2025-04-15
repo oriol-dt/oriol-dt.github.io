@@ -12,9 +12,7 @@ let gravity = 1;
 let isJumping = false;
 
 function randomObstacleHeight(min, max) {
-    let height = Math.round(Math.random() * (max - min) + min);
-    document.getElementById("height").textContent = `Altura: ${height}px`;
-    return height;
+    return Math.round(Math.random() * (max - min) + min);
 }
 
 let obstacleX = 400;
