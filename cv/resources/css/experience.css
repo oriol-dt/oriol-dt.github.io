@@ -1,0 +1,40 @@
+body {
+    scroll-behavior: smooth;
+    background-color: darkslategray;
+    color: white;
+}
+
+.card {
+    background-color: darkslategray;
+    color: white;
+    border: 3px solid black;
+}
+
+.card:hover {
+    background-color: #5f758b;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.adm-content,
+.inf-content {
+    display: none;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
