@@ -1,0 +1,21 @@
+* {
+    color: white!important;
+}
+
+body, .card {
+    background-color: darkslategray;
+}
+
+.card {
+    border: 3px solid black;
+    width: 15cm;
+}
+
+.card:hover {
+    background-color: #5f758b;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.institution {
+    text-decoration: none;
+}
