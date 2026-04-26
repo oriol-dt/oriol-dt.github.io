@@ -25,6 +25,8 @@ const updateProgress = () => {
     } else {
         console.error("No se han encontrado los elementos 'progressBar' o 'progressText'");
     }
+
+    console.log(percentage);
 };
 
 setInterval(updateProgress, 1000);
