@@ -22,11 +22,11 @@ const updateProgress = () => {
     if (bar && text) {
         bar.style.width = percentage + "%";
         text.innerText = percentage.toFixed(2) + '% completado';
+        console.log(percentage);
     } else {
         console.error("No se han encontrado los elementos 'progressBar' o 'progressText'");
     }
 
-    console.log(percentage);
 };
 
 setInterval(updateProgress, 1000);
