@@ -22,8 +22,6 @@ const updateProjectProgress = (startDateStr, endDateStr, barId, textId) => {
 };
 
 const runAllProgress = () => {
-    updateProjectProgress('2026-04-01T00:00:00', '2026-05-01T00:00:00', 'progressBar1', 'progressText1');
-
     updateProjectProgress('2026-05-01T00:00:00', '2026-06-01T00:00:00', 'progressBar2', 'progressText2');
 
     updateProjectProgress('2026-06-01T00:00:00', '2026-07-01T00:00:00', 'progressBar3', 'progressText3');
