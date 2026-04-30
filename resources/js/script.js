@@ -7,7 +7,6 @@ const updateProjectProgress = (startDateStr, endDateStr, barId, textId) => {
     const elapsed = now - start;
 
     let percentage = (elapsed / total) * 100;
-
     percentage = Math.min(Math.max(percentage, 0), 100);
 
     const bar = document.getElementById(barId);
@@ -15,17 +14,19 @@ const updateProjectProgress = (startDateStr, endDateStr, barId, textId) => {
 
     if (bar && text) {
         bar.style.width = percentage.toFixed(2) + "%";
-        text.innerText = percentage.toFixed(2) + '% completado';
 
-        if (now < start) text.innerText = "Próximamente...";
+        if (now < start) {
+            text.innerText = "Próximamente...";
+            bar.style.width = "0%";
+        } else {
+            text.innerText = percentage.toFixed(2) + '% completado';
+        }
     }
 };
 
 const runAllProgress = () => {
     updateProjectProgress('2026-05-01T00:00:00', '2026-06-01T00:00:00', 'progressBar2', 'progressText2');
-
     updateProjectProgress('2026-06-01T00:00:00', '2026-07-01T00:00:00', 'progressBar3', 'progressText3');
-
     updateProjectProgress('2026-07-01T00:00:00', '2026-08-01T00:00:00', 'progressBar4', 'progressText4');
 };
 
