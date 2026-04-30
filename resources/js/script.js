@@ -25,6 +25,8 @@ const runAllProgress = () => {
     updateProjectProgress('2026-05-01T00:00:00', '2026-06-01T00:00:00', 'progressBar2', 'progressText2');
 
     updateProjectProgress('2026-06-01T00:00:00', '2026-07-01T00:00:00', 'progressBar3', 'progressText3');
+
+    updateProjectProgress('2026-07-01T00:00:00', '2026-08-01T00:00:00', 'progressBar4', 'progressText4');
 };
 
 setInterval(runAllProgress, 1000);
