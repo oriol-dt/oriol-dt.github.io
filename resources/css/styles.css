@@ -120,12 +120,14 @@ footer {
     align-items: center;
     width: 100%;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .project-title {
-    white-space: nowrap;
     min-width: fit-content;
     font-weight: 500;
+    flex: 1 1 auto;
+    text-align: left;
     color: var(--text-main);
 }
 
@@ -150,4 +152,38 @@ footer {
     white-space: nowrap;
     min-width: 110px;
     text-align: right;
+}
+
+@media (max-width: 480px) {
+    .project-list li {
+        padding: 15px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .project-title {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .progress-container {
+        height: 12px;
+    }
+
+    .progress-text {
+        text-align: center;
+        min-width: 100%;
+
+    }
+
+    .btn-small {
+        text-align: center;
+        padding: 8px;
+        background: var(--bg-color);
+        border-radius: 4px;
+    }
 }
