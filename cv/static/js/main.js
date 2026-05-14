@@ -1,0 +1,2 @@
+import { cvData } from "./data";
+
