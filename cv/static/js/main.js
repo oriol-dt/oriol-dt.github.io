@@ -73,15 +73,15 @@ function renderSection(sectionId) {
         html = `
             <div class="welcome-section">
                 <div class="description-text">
-                    <p>Especialista en sistemas con base en administración de infraestructuras (Windows/Linux) y servicios de red, evolucionando hacia el desarrollo Full Stack.</p>
-                    <p>Enfocado en la resolución de problemas técnicos complejos con alta capacidad de aprendizaje autónomo y proactividad.</p>
+                    <p>Técnico en sistemas con base en administración de infraestructuras (Windows/Linux) y servicios de red, evolucionando hacia el desarrollo Full Stack. Enfocado en la resolución de problemas técnicos complejos con alta capacidad de aprendizaje autónomo y proactividad.</p>
                 </div>
                 <div class="info-grid">
                     <div class="info-item">
                         <h4>Habilidades IT</h4>
                         <ul>
-                            <li><strong>Sistemas:</strong> Active Directory, Nginx, Apache, IIS, MySQL.</li>
-                            <li><strong>Stack:</strong> Python, PHP, HTML/CSS, JavaScript.</li>
+                            <li><strong>Sistemas:</strong> Active Directory, DNS, DHCP, Nginx, Apache, IIS, MySQL.</li>
+                            <li><strong>Programación:</strong> Python, PHP, HTML/CSS, JavaScript, SQL.</li>
+                            <li><strong>Stack:</strong> JavaScript Vanilla</li>
                         </ul>
                     </div>
                     <div class="info-item">
