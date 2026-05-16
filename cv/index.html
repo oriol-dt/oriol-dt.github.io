@@ -4,105 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi CV</title>
-        <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="resources/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="static/css/styles.css" type="text/css">
+        <script type="module" src="static/js/main.js"></script>
     </head>
 
     <body>
         <div class="container">
-            <h1 class="display-4">Mi Currículum</h1>
-            <h4>Técnico de Sistemas / Iniciándome en Programación Full Stack</h4>
-            <div id="personal-info">
-                <div class="row">
-                    <div id="profile-pic" class="col-md-4">
-                        <img src="resources/images/IMG.jpg" alt="Mi foto" class="img-fluid rounded-circle profile-img">
-                    </div>
-                    <div class="col-md-8">
-                        <br>
-                        <h4>Información personal</h4>
-                        <p><strong>Nombre</strong>: Oriol Dueñas Triguero</p>
-                        <p><strong>Edad</strong>: <span id="age"></span></p>
-                        <p><strong>Información de contacto</strong>: <a href="mailto:orioldu@hotmail.com?subject=Oferta%20Trabajo%20Oriol%20Dueñas%20Triguero" target="_blank" class="button btn btn-primary">Correo electrónico</a></p>
-                        <p><strong>Ubicación</strong>: España</p>
-                        <hr>
-                        <h4>Habilidades y fortalezas</h4>
-                        <ul>
-                            <li>Facilidad para aprender</li>
-                            <li>Proactividad</li>
-                            <li>Autonomía</li>
-                        </ul><hr>
-                        <h4>Redes sociales</h4>
-                        <ul>
-                            <li><a href="https://github.com/oriol-dt" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/oriol-dt" target="_blank">LinkedIn</a></li>
-                        </ul>
-                        <hr>
-                        <details>
-                            <summary id="language-title">Idiomas</summary>
-                            <ul class="language-list">
-                                <li>Español - Nativo</li>
-                                <li>Catalán - Nativo</li>
-                                <li>Inglés - <a style="text-decoration: none; :hover {text-decoration: underline;}" href="https://drive.google.com/file/d/1DExCsPQn_VeXbxMIYusob0DuujgJeOgK/view?usp=sharing" target="_blank">Intermedio</a></li>
-                            </ul>
-                        </details><br>
-                        <h4>Informática</h4>
-                        <details>
-                            <summary><strong>Sistemas</strong></summary>
-                            <ul>
-                                <li>Windows (Desktop y Server)</li>
-                                <details>
-                                    <summary><strong>Servicios utilizados</strong></summary>
-                                    <ul>
-                                        <li>Active Directory</li>
-                                        <li>Web / FTP (Internet Information Services)</li>
-                                        <li>DHCP</li>
-                                        <li>DNS</li>
-                                        <li>Escritorio Remoto (RDP)</li>
-                                        <li>Impresión</li>
-                                        <li>Routing and Remote Access Services (RRAS)</li>
-                                    </ul>
-                                </details>
-                                <li>Ubuntu (Desktop y Server), Zentyal</li>
-                                <details>
-                                    <summary><strong>Servicios utilizados</strong></summary>
-                                    <ul>
-                                        <li>Directorio (OpenLDAP)</li>
-                                        <li>Web (Apache, Nginx)</li>
-                                        <li>Correo (Postfix, Dovecot)</li>
-                                        <li>Bases de datos (MySQL, MariaDB)</li>
-                                        <li>DNS (Bind, dnsmasq)</li>
-                                        <li>Streaming de medios (Icecast)</li>
-                                        <li>DHCP</li>
-                                    </ul>
-                                </details>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary><strong>Programación</strong></summary>
-                            <ul>
-                                <li>Python: Medio</li>
-                                <li>HTML: Medio</li>
-                                <li>CSS: Medio</li>
-                                <li>JavaScript: Básico</li>
-                                <li>PHP: Medio</li>
-                                <li>SQL: Medio</li>
-                                <li>C: Básico</li>
-                            </ul>
-                        </details><br>
-                        <h4>Información adicional</h4>
-                        <ul>
-                            <li>Permisos de conducir: B</li>
-                            <li>Movilización geográfica: No</li>
-                        </ul>
-                    </div>
+            <header class="main-header">
+                <div class="avatar-container">
+                    <img src="static/images/IMG.jpg" alt="Oriol Dueñas" class="avatar" />
                 </div>
-            </div>
-            <footer>
-                <a class="button btn btn-primary" href="experience.html"><strong>Experiencia laboral</strong></a>
-                <a class="button btn btn-primary" href="education.html"><strong>Formación</strong></a>
-                <p><strong>Última actualización</strong>:<span id="day"></span>de<span id="month"></span>del<span id="year"></span>.</p>
+                <div class="header-text">
+                    <h1>Oriol Dueñas Triguero</h1>
+                </div>
+            </header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-section="inicio">Inicio</a></li>
+                    <li><a href="#" class="nav-link" data-section="experiencia">Experiencia</a></li>
+                    <li><a href="#" class="nav-link" data-section="formacion">Formación</a></li>
+                    <li><a href="#" class="nav-link" data-section="proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+            <main id="hero-section">
 
-                <script src="resources/js/script.js"></script>
+            </main>
+            <footer>
+                <p><strong>Última actualización</strong>: <span id="full-date"></span></p>
             </footer>
         </div>
     </body>
