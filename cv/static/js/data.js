@@ -55,6 +55,13 @@ export const cvData = {
             descripcion: "Aplicación web sencilla para gestionar tareas desde el navegador.",
             tecnologias: ["HTML5", "CSS3", "JavaScript (localStorage)"],
             link: "https://oriol-dt-js.netlify.app"
+        },
+        {
+            titulo: "Mini E-Commerce",
+            descripcion: "E-commerce de informática con catálogo de productos, carrito de la compra " +
+                        "y búsqueda simple por nombre de producto.",
+            tecnologias: ["HTML5", "CSS3", "JavaScript (.js, .jsx)", "React"],
+            link: "https://oriol-dt-react.vercel.app"
         }
     ]
 };
