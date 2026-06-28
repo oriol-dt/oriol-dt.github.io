@@ -62,6 +62,12 @@ export const cvData = {
                         "y búsqueda simple por nombre de producto.",
             tecnologias: ["HTML5", "CSS3", "JavaScript (.js, .jsx)", "React"],
             link: "https://oriol-dt-react.vercel.app"
+        },
+        {
+            titulo: "Node-MongoDB",
+            descripcion: "API REST desarrollada para la gestión de datos persistentes en una base de datos NoSQL.",
+            tecnologias: ["Node.js, Express.js, MongoDB, Mongoose"],
+            link: "https://node-mongodb-learn.onrender.com"
         }
     ]
 };
