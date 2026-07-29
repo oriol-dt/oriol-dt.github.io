@@ -4,7 +4,7 @@ export const cvData = {
         rol: "Técnico de Sistemas y Soporte / Full-Stack Developer",
         ubicacion: "Lleida, España",
         nacimiento: "2002-03-25",
-        email: "oriolduenas.dev@gmail.com",
+        email: "oriol******.dev@gmail.com",
         link_doc: "https://drive.google.com/file/d/1DExCsPQn_VeXbxMIYusob0DuujgJeOgK/view?usp=drivesdk"
     },
     experiencia: [
@@ -68,6 +68,12 @@ export const cvData = {
             descripcion: "API REST desarrollada para la gestión de datos persistentes en una base de datos NoSQL.",
             tecnologias: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
             link: "https://node-mongodb-learn.onrender.com"
+        },
+        {
+            titulo: "Gestor de Proyectos (MERN)",
+            descripcion: "Aplicación web completa que gestiona proyectos guardados (CRUD) por usuarios autenticados.",
+            tecnologias: ["MongoDB", "Express.js", "React", "Node.js"],
+            link: "https://oriol-dt-fullstack.vercel.app"
         }
     ]
 };
