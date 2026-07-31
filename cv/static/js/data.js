@@ -4,7 +4,7 @@ export const cvData = {
         rol: "Técnico de Sistemas y Soporte / Full-Stack Developer",
         ubicacion: "Lleida, España",
         nacimiento: "2002-03-25",
-        email: "oriol******.dev@gmail.com",
+        email: "oriolduenas.dev@gmail.com",
         link_doc: "https://drive.google.com/file/d/1DExCsPQn_VeXbxMIYusob0DuujgJeOgK/view?usp=drivesdk"
     },
     experiencia: [
