@@ -133,6 +133,37 @@ h2 {
     font-weight: bold;
 }
 
+/* Contenedor de enlaces de proyectos */
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-link {
+    font-size: 0.85rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-link:hover {
+    background-color: var(--accent-hover);
+}
+
+.gh-link {
+    background-color: #333;
+}
+
+.gh-link:hover {
+    background-color: #000;
+}
+
 /* Barras de Progreso */
 .progress-container {
     flex-grow: 1;
@@ -157,6 +188,40 @@ h2 {
     min-width: 110px;
     text-align: right;
 }
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list > li {
+    margin-bottom: 12px;
+}
+
+.frameworks-category {
+    margin-top: 6px;
+    padding-left: 10px;
+    border-left: 2px solid var(--accent-color);
+}
+
+.framework-group-title {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.tag {
+    background: var(--bg-color);
+    color: var(--text-main);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+
 
 /* Adaptación para Dispositivos Móviles */
 @media (max-width: 480px) {
@@ -196,6 +261,28 @@ h2 {
         border: 1px solid var(--border-color);
         border-radius: 8px;
         box-sizing: border-box;
+    }
+
+    /* Ajuste para los botones de proyectos en móvil (Demo y GitHub en columna o ancho completo) */
+    .project-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-link {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Adaptación de la sección de Habilidades y Frameworks para móvil */
+    .welcome-section {
+        text-align: left;
+    }
+
+    .frameworks-category {
+        padding-left: 8px;
+        margin-left: 0;
     }
 
     .progress-container {

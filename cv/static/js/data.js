@@ -54,14 +54,16 @@ export const cvData = {
             titulo: "App de Tareas",
             descripcion: "Aplicación web sencilla para gestionar tareas desde el navegador.",
             tecnologias: ["HTML5", "CSS3", "JavaScript (localStorage)"],
-            link: "https://oriol-dt-js.netlify.app"
+            link_pub: "https://oriol-dt-js.netlify.app",
+            link_gh: "https://github.com/oriol-dt/to-do"
         },
         {
             titulo: "Mini E-Commerce",
             descripcion: "E-commerce de informática con catálogo de productos, carrito de la compra " +
                         "y búsqueda simple por nombre de producto.",
             tecnologias: ["HTML5", "CSS3", "JavaScript (.js, .jsx)", "React"],
-            link: "https://oriol-dt-react.vercel.app"
+            link_pub: "https://oriol-dt-react.vercel.app",
+            link_gh: "https://github.com/oriol-dt/react-learn"
         },
         {
             titulo: "Node-MongoDB",
@@ -73,7 +75,23 @@ export const cvData = {
             titulo: "Gestor de Proyectos (MERN)",
             descripcion: "Aplicación web completa que gestiona proyectos guardados (CRUD) por usuarios autenticados.",
             tecnologias: ["MongoDB", "Express.js", "React", "Node.js"],
-            link: "https://oriol-dt-fullstack.vercel.app"
-        }
+            link: "https://oriol-dt-fullstack.vercel.app",
+        },
+        {
+            "titulo": "Dashboard de Incidencias Corporativas",
+            "descripcion": "Panel de control front-end desarrollado bajo estándares profesionales, enfocado en la monitorización y gestión de incidencias en tiempo real, implementando una arquitectura moderna basada en la reactividad fina de Angular 18 con Signals, pruebas unitarias robustas mediante Jest y containerización en Docker.",
+            "tecnologias": [
+                "Angular 18",
+                "Standalone Components",
+                "Signals",
+                "SCSS",
+                "Jest",
+                "Docker",
+                "Nginx",
+                "Netlify"
+            ],
+            link_pub: "https://dashboard-metrica.netlify.app",
+            link_gh: "https://github.com/oriol-dt/dashboard-angular"
+        },
     ]
 };

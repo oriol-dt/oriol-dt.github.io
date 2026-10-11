@@ -132,6 +132,10 @@ body {
     color: var(--accent-color);
 }
 
+.card p {
+    white-space: pre-line;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
